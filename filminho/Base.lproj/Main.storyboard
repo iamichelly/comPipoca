@@ -172,7 +172,7 @@
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;dateLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMM-Tq-3UO">
                                                                                             <rect key="frame" x="0.0" y="0.0" width="175" height="19.5"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                                            <nil key="textColor"/>
+                                                                                            <color key="textColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                     </subviews>
@@ -246,26 +246,27 @@
                                                                     <autoresizingMask key="autoresizingMask"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="i20-UU-UAz">
-                                                                            <rect key="frame" x="8" y="8" width="184" height="258.5"/>
+                                                                            <rect key="frame" x="8" y="8" width="184" height="259.5"/>
                                                                         </imageView>
                                                                         <stackView opaque="NO" contentMode="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="j2F-39-VZ6">
-                                                                            <rect key="frame" x="8" y="270.5" width="184" height="20.5"/>
+                                                                            <rect key="frame" x="8" y="271.5" width="184" height="19.5"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;titleLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkv-wS-QqO">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="90.5" height="20.5"/>
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="91.5" height="19.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="&lt;dateLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wI5-0w-lz1">
-                                                                                    <rect key="frame" x="91.5" y="0.0" width="92.5" height="20.5"/>
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                    <nil key="textColor"/>
+                                                                                    <rect key="frame" x="92.5" y="0.0" width="91.5" height="19.5"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                                    <color key="textColor" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                             </subviews>
                                                                             <constraints>
                                                                                 <constraint firstItem="vkv-wS-QqO" firstAttribute="leading" secondItem="j2F-39-VZ6" secondAttribute="leading" id="N9C-Oq-TuS"/>
+                                                                                <constraint firstItem="vkv-wS-QqO" firstAttribute="centerY" secondItem="j2F-39-VZ6" secondAttribute="centerY" id="tw4-L0-FL0"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="wI5-0w-lz1" secondAttribute="trailing" id="wgL-Hq-fd2"/>
                                                                             </constraints>
                                                                         </stackView>
