@@ -7,33 +7,28 @@
 
 import UIKit
 
-class FeaturedViewController: UIViewController, UICollectionViewDataSource {
+class FeaturedViewController: UIViewController {
+    
+    let popularMovies = Movie.popularMovies()
+    let nowPlayinhMovies = Movie.nowPlayingMovies()
+    //let upcomingMovies = Movie.upcomingMovies()
     
     
-
+   
+    
     @IBOutlet var popularCollectionView: UICollectionView!
-    @IBOutlet var nowPlayingCollectionView: UICollectionView!
+    @IBOutlet var nowPlayingCollectionView: UICollectionView! // 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         popularCollectionView.dataSource = self
-    }
+        nowPlayingCollectionView.dataSource = self // 2
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "popularCell", for: indexPath) as? PopularCollectionViewCell {
-        cell.titleLabel.text = "Título do filme"
-        cell.image.image = UIImage()
-        return cell
-        }
         
-        return UICollectionViewCell()
     }
 
+    
 }
 

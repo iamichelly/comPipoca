@@ -8,7 +8,7 @@
 import UIKit
 
 class NowPlayingCollectionViewCell: UICollectionViewCell {
-    @IBOutlet var image: UIImageView!
+    @IBOutlet var imageView: UIImageView!
     @IBOutlet var dateLabel: UILabel!
     @IBOutlet var titleLabel: UILabel!
 }
