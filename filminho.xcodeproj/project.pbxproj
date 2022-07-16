@@ -73,9 +73,9 @@
 		947C3026287C9A1800545188 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				949164542874AEAD00A6E4B2 /* FeaturedViewController.swift */,
-				94EC6855287E145400CE23FE /* FeaturedViewController+UICollectionViewDataSource.swift */,
 				94EC6857287F3F0700CE23FE /* DetailsViewController.swift */,
+				94EC6855287E145400CE23FE /* FeaturedViewController+UICollectionViewDataSource.swift */,
+				949164542874AEAD00A6E4B2 /* FeaturedViewController.swift */,
 				94EC6859287F47F100CE23FE /* FeaturedViewController+UICollectionViewDelegate.swift */,
 			);
 			path = Controllers;
