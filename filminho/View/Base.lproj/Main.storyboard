@@ -247,7 +247,7 @@
                                                             <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells>
-                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ayt-NO-4QE">
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="upcomingCell" id="Ayt-NO-4QE" customClass="UpcomingCollectionViewCell" customModule="filminho" customModuleProvider="target">
                                                                 <rect key="frame" x="8" y="9.5" width="200" height="299"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aXB-eq-l8e">
@@ -290,6 +290,11 @@
                                                                         <constraint firstItem="i20-UU-UAz" firstAttribute="top" secondItem="aXB-eq-l8e" secondAttribute="top" constant="8" id="uw6-6E-aZ0"/>
                                                                     </constraints>
                                                                 </collectionViewCellContentView>
+                                                                <connections>
+                                                                    <outlet property="dateLabel" destination="wI5-0w-lz1" id="Gdb-He-2fX"/>
+                                                                    <outlet property="imageView" destination="i20-UU-UAz" id="1wH-Hr-UA6"/>
+                                                                    <outlet property="titleLabel" destination="vkv-wS-QqO" id="1Hs-fT-xaf"/>
+                                                                </connections>
                                                             </collectionViewCell>
                                                         </cells>
                                                     </collectionView>
@@ -323,6 +328,7 @@
                     <connections>
                         <outlet property="nowPlayingCollectionView" destination="73l-UH-CF4" id="alX-bg-M1p"/>
                         <outlet property="popularCollectionView" destination="cZn-kt-Cio" id="oRS-Rg-LIp"/>
+                        <outlet property="upcomingCollectionView" destination="qfD-vw-5BK" id="jEB-xC-dsH"/>
                         <segue destination="0Ub-WH-p0P" kind="show" identifier="detailsSegue" id="ZXR-Fm-bTC"/>
                     </connections>
                 </viewController>

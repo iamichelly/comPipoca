@@ -10,15 +10,12 @@ import UIKit
 class FeaturedViewController: UIViewController {
     
     let popularMovies = Movie.popularMovies()
-    let nowPlayinhMovies = Movie.nowPlayingMovies()
-    //let upcomingMovies = Movie.upcomingMovies()
-    
-    
-   
+    let nowPlayingMovies = Movie.nowPlayingMovies()
+    let upcomingMovies = Movie.upcomingMovies()
     
     @IBOutlet var popularCollectionView: UICollectionView!
     @IBOutlet var nowPlayingCollectionView: UICollectionView! // 1
-    //criar aqui a var p upcomingCollectionView
+    @IBOutlet var upcomingCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,9 +23,11 @@ class FeaturedViewController: UIViewController {
         
         popularCollectionView.dataSource = self
         nowPlayingCollectionView.dataSource = self // 2
+        upcomingCollectionView.dataSource = self
         
         popularCollectionView.delegate = self
         nowPlayingCollectionView.delegate = self //3
+        upcomingCollectionView.delegate = self
 
         
     }
