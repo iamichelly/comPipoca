@@ -17,6 +17,7 @@ class FeaturedViewController: UIViewController {
     @IBOutlet var nowPlayingCollectionView: UICollectionView! // 1
     @IBOutlet var upcomingCollectionView: UICollectionView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -24,10 +25,12 @@ class FeaturedViewController: UIViewController {
         popularCollectionView.dataSource = self
         nowPlayingCollectionView.dataSource = self // 2
         upcomingCollectionView.dataSource = self
+    
         
         popularCollectionView.delegate = self
         nowPlayingCollectionView.delegate = self //3
         upcomingCollectionView.delegate = self
+        
         
         Task { // p nowPlaying é outra task, n aq dentro
             self.popularMovies = await Movie.popularMoviesAPI()

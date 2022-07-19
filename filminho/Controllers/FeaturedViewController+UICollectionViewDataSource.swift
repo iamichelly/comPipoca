@@ -7,6 +7,7 @@
 
 import UIKit
 extension FeaturedViewController: UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == popularCollectionView {
             return popularMovies.count
