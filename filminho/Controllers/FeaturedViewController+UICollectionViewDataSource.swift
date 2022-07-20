@@ -59,14 +59,14 @@ extension FeaturedViewController: UICollectionViewDataSource {
             
             
             cell.setup(title: nowPlayingMovies[indexPath.item].title,
-                       year: String(nowPlayingMovies[indexPath.item].releaseDate.prefix(4)),
+                       year: "\(nowPlayingMovies[indexPath.item].releaseDate.prefix(4))",
                        image: UIImage())
             let movie = nowPlayingMovies[indexPath.item]
             
             Task {
                 let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
                 let imagem = UIImage(data: imageData) ?? UIImage()
-                cell.setup(title: movie.title, year: movie.releaseDate, image: imagem)
+                cell.setup(title: movie.title, year: String (movie.releaseDate.prefix(4)), image: imagem)
             }
             
             return cell
@@ -86,7 +86,7 @@ extension FeaturedViewController: UICollectionViewDataSource {
             Task {
                 let imageData = await Movie.downloadImageData(withPath: movie.posterPath)
                 let imagem = UIImage(data: imageData) ?? UIImage()
-                cell.setup(title: movie.title, year: movie.releaseDate, image: imagem)
+                cell.setup(title: movie.title, year: String (movie.releaseDate.prefix(4)), image: imagem)
                 
             }
            

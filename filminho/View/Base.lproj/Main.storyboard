@@ -554,7 +554,7 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w0W-h5-lqz">
                                                     <rect key="frame" x="0.0" y="113" width="375" height="1"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="FPd-A7-lZB"/>
                                                     </constraints>
@@ -575,7 +575,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="750" text="&lt;titleLabel&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fG4-WT-eOV">
                                                                     <rect key="frame" x="0.0" y="0.0" width="238.33333333333334" height="20.333333333333332"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BZ3-jU-DLf">
@@ -601,6 +601,7 @@
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="w0W-h5-lqz" firstAttribute="top" secondItem="i8z-CS-sLk" secondAttribute="bottom" constant="11" id="0NW-o7-e1u"/>
                                                 <constraint firstAttribute="trailing" secondItem="i8z-CS-sLk" secondAttribute="trailing" constant="16" id="8u8-k3-cUt"/>
@@ -611,6 +612,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="w0W-h5-lqz" secondAttribute="bottom" id="wHn-LN-xwr"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <size key="customSize" width="375" height="114"/>
                                         <connections>
                                             <outlet property="dateLabel" destination="PD4-9g-TFA" id="g0j-bA-hgz"/>
@@ -622,7 +624,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="d7y-eo-GwQ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="d7y-eo-GwQ" firstAttribute="trailing" secondItem="Eky-dm-DcM" secondAttribute="trailing" id="LRs-Xj-3UF"/>
                             <constraint firstItem="Eky-dm-DcM" firstAttribute="leading" secondItem="d7y-eo-GwQ" secondAttribute="leading" id="QXl-X0-T9x"/>
